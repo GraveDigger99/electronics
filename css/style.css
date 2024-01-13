@@ -172,7 +172,7 @@ h6 {
 }
 
 .page {
-  padding-top: 13.75rem;
+  padding-top: 0;
   padding-bottom: 6.25rem;
 }
 
@@ -884,19 +884,22 @@ body::after {
 .header {
   -webkit-box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.09);
           box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.09);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: var(--mainWhite);
   z-index: 50;
 }
 
 .header__wrapper {
   position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   background-color: #fff;
+}
+
+._header-scroll .header__wrapper {
+  position: fixed;
 }
 
 .header__wrapper._active {
@@ -2766,10 +2769,6 @@ body::after {
 }
 
 @media (max-width: 89.375em) {
-  .page {
-    padding-top: 14.8125rem;
-  }
-
   .footer__menu {
     gap: 1.875rem;
   }
@@ -3034,10 +3033,6 @@ body::after {
 }
 
 @media (max-width: 47.99875em) {
-  .page {
-    padding-top: 20.625rem;
-  }
-
   .popup__line {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -3396,10 +3391,6 @@ body::after {
 }
 
 @media (max-width: 29.99875em) {
-  .page {
-    padding-top: 22rem;
-  }
-
   .button__text {
     display: none;
   }
