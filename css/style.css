@@ -925,7 +925,7 @@ body::after {
 }
 
 .top-header__items_mobile {
-  display: none;
+  display: none !important;
 }
 
 .bottom-header {
@@ -3084,7 +3084,7 @@ body::after {
   }
 
   .top-header__items_mobile {
-    display: block;
+    display: block !important;
   }
 
   .top-header__items_mobile:not(:last-child) {
