@@ -5296,8 +5296,8 @@ body::after {
 
   .catalog_hidden-pc {
     gap: 0.625rem;
-    display: -ms-grid;
-    display: grid;
+    display: -ms-grid !important;
+    display: grid !important;
     width: 100%;
     -ms-grid-columns: (50px)[2];
     grid-template-columns: repeat(2, 50px);
