@@ -5528,6 +5528,7 @@ body::after {
     transition: left 0.5s ease 0s;
     background-color: var(--mainWhite);
     padding: 1.875rem;
+    overflow: auto;
     z-index: 4;
   }
 
