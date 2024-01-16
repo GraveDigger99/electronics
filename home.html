@@ -5,7 +5,7 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240115144825">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240116094258">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -63,7 +63,11 @@
 							<button class="bottom-header__btn _icon-search"></button>
 						</form>
 						<div data-da=".menu__container,767.98,last" class="bottom-header__actions">
-							<a href="#" class="bottom-header__button button button_green">Заказать звонок</a>
+							<a href="#" class="bottom-header__button bottom-header__button_desktop button button_green">Заказать звонок</a>
+							<a href="#" class="bottom-header__button bottom-header__button_mobile button whatsapp-btn button_green">
+								<span class="element element_whatsapp element_white-whatsapp" style="--icon: url(../img/icons/whatsapp.svg)"></span>
+								<span>Написать WhatsApp</span>
+							</a>
 							<a href="#" class="bottom-header__button button button_transparent _icon-user">Войти</a>
 							<button class="bottom-header__shopping-card-btn shopping-card-btn _icon-cart"></button>
 						</div>
@@ -166,7 +170,6 @@
 				</div>
 			</div>
 		</header>
-
 		<main class="page page_home">
 			<div class="breadcrumbs">
 				<div class="breadcrumbs__container">
@@ -1082,9 +1085,25 @@
 									</li>
 								</ul>
 							</div>
+							<div class="banner banner_mobile-visible">
+								<div class="banner__item">
+									<div class="banner__image">
+										<picture><source srcset="img/banner/Image.webp" type="image/webp"><img src="img/banner/Image.jpg" alt="image"></picture>
+										<span class="banner__header">Новинка</span>
+									</div>
+									<div class="banner__label">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
+								</div>
+								<div class="banner__item">
+									<div class="banner__image">
+										<picture><source srcset="img/banner/Image.webp" type="image/webp"><img src="img/banner/Image.jpg" alt="image"></picture>
+										<span class="banner__header">Новинка</span>
+									</div>
+									<div class="banner__label">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
+								</div>
+							</div>
 						</aside>
 						<div class="similar-products__content">
-							<h2 class="similar-products__subtitle subtitle">Похожие товары</h2>
+							<h2 data-da=".similar-products__container, 767.98,first" class="similar-products__subtitle subtitle">Похожие товары</h2>
 							<div class="similar-products__cards">
 								<div class="product-card flex">
 									<div class="product-card__content content-product flex">
@@ -1092,12 +1111,13 @@
 											<picture><source data-srcset="img/product-card/product.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-card/product.png" alt="image:product"></picture>
 										</div>
 										<div class="content-product__inner grid">
-											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
+											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A
+												(черный)</div>
 											<div class="content-product__availability flex">
 												<div class="content-product__label">Наличие:</div>
 												<a href="#" target="_blank" class="content-product__link">Оренбург - в наличии</a>
 											</div>
-											<ul class="content-product__cities flex">
+											<ul class="content-product__cities content-product__cities_2x flex">
 												<li>
 													Оренбург
 												</li>
@@ -1116,7 +1136,7 @@
 									<div class="product-card__actions actions-product grid">
 										<div class="actions-product__top flex">
 											<div class="actions-product__wrapper">
-												<div class="actions-product__column actions-product__column_old-price">
+												<div class="actions-product__column actions-product__column_hidden actions-product__column_old-price">
 													<ul class="actions-product__list">
 														<li>
 															290 ₽
@@ -1173,12 +1193,13 @@
 											<picture><source data-srcset="img/product-card/product.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-card/product.png" alt="image:product"></picture>
 										</div>
 										<div class="content-product__inner grid">
-											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
+											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A
+												(черный)</div>
 											<div class="content-product__availability flex">
 												<div class="content-product__label">Наличие:</div>
 												<a href="#" target="_blank" class="content-product__link">Оренбург - в наличии</a>
 											</div>
-											<ul class="content-product__cities flex">
+											<ul class="content-product__cities content-product__cities_2x flex">
 												<li>
 													Оренбург
 												</li>
@@ -1197,7 +1218,7 @@
 									<div class="product-card__actions actions-product grid">
 										<div class="actions-product__top flex">
 											<div class="actions-product__wrapper">
-												<div class="actions-product__column actions-product__column_old-price">
+												<div class="actions-product__column actions-product__column_hidden actions-product__column_old-price">
 													<ul class="actions-product__list">
 														<li>
 															290 ₽
@@ -1254,12 +1275,13 @@
 											<picture><source data-srcset="img/product-card/product.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-card/product.png" alt="image:product"></picture>
 										</div>
 										<div class="content-product__inner grid">
-											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
+											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A
+												(черный)</div>
 											<div class="content-product__availability flex">
 												<div class="content-product__label">Наличие:</div>
 												<a href="#" target="_blank" class="content-product__link">Оренбург - в наличии</a>
 											</div>
-											<ul class="content-product__cities flex">
+											<ul class="content-product__cities content-product__cities_2x flex">
 												<li>
 													Оренбург
 												</li>
@@ -1278,7 +1300,7 @@
 									<div class="product-card__actions actions-product grid">
 										<div class="actions-product__top flex">
 											<div class="actions-product__wrapper">
-												<div class="actions-product__column actions-product__column_old-price">
+												<div class="actions-product__column actions-product__column_hidden actions-product__column_old-price">
 													<ul class="actions-product__list">
 														<li>
 															290 ₽
@@ -1335,12 +1357,13 @@
 											<picture><source data-srcset="img/product-card/product.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-card/product.png" alt="image:product"></picture>
 										</div>
 										<div class="content-product__inner grid">
-											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
+											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A
+												(черный)</div>
 											<div class="content-product__availability flex">
 												<div class="content-product__label">Наличие:</div>
 												<a href="#" target="_blank" class="content-product__link">Оренбург - в наличии</a>
 											</div>
-											<ul class="content-product__cities flex">
+											<ul class="content-product__cities content-product__cities_2x flex">
 												<li>
 													Оренбург
 												</li>
@@ -1359,7 +1382,7 @@
 									<div class="product-card__actions actions-product grid">
 										<div class="actions-product__top flex">
 											<div class="actions-product__wrapper">
-												<div class="actions-product__column actions-product__column_old-price">
+												<div class="actions-product__column actions-product__column_hidden actions-product__column_old-price">
 													<ul class="actions-product__list">
 														<li>
 															290 ₽
@@ -1416,12 +1439,13 @@
 											<picture><source data-srcset="img/product-card/product.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-card/product.png" alt="image:product"></picture>
 										</div>
 										<div class="content-product__inner grid">
-											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
+											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A
+												(черный)</div>
 											<div class="content-product__availability flex">
 												<div class="content-product__label">Наличие:</div>
 												<a href="#" target="_blank" class="content-product__link">Оренбург - в наличии</a>
 											</div>
-											<ul class="content-product__cities flex">
+											<ul class="content-product__cities content-product__cities_2x flex">
 												<li>
 													Оренбург
 												</li>
@@ -1440,7 +1464,7 @@
 									<div class="product-card__actions actions-product grid">
 										<div class="actions-product__top flex">
 											<div class="actions-product__wrapper">
-												<div class="actions-product__column actions-product__column_old-price">
+												<div class="actions-product__column actions-product__column_hidden actions-product__column_old-price">
 													<ul class="actions-product__list">
 														<li>
 															290 ₽
@@ -1497,12 +1521,13 @@
 											<picture><source data-srcset="img/product-card/product.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-card/product.png" alt="image:product"></picture>
 										</div>
 										<div class="content-product__inner grid">
-											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
+											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A
+												(черный)</div>
 											<div class="content-product__availability flex">
 												<div class="content-product__label">Наличие:</div>
 												<a href="#" target="_blank" class="content-product__link">Оренбург - в наличии</a>
 											</div>
-											<ul class="content-product__cities flex">
+											<ul class="content-product__cities content-product__cities_2x flex">
 												<li>
 													Оренбург
 												</li>
@@ -1521,7 +1546,7 @@
 									<div class="product-card__actions actions-product grid">
 										<div class="actions-product__top flex">
 											<div class="actions-product__wrapper">
-												<div class="actions-product__column actions-product__column_old-price">
+												<div class="actions-product__column actions-product__column_hidden actions-product__column_old-price">
 													<ul class="actions-product__list">
 														<li>
 															290 ₽
@@ -1578,12 +1603,13 @@
 											<picture><source data-srcset="img/product-card/product.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-card/product.png" alt="image:product"></picture>
 										</div>
 										<div class="content-product__inner grid">
-											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
+											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A
+												(черный)</div>
 											<div class="content-product__availability flex">
 												<div class="content-product__label">Наличие:</div>
 												<a href="#" target="_blank" class="content-product__link">Оренбург - в наличии</a>
 											</div>
-											<ul class="content-product__cities flex">
+											<ul class="content-product__cities content-product__cities_2x flex">
 												<li>
 													Оренбург
 												</li>
@@ -1602,7 +1628,7 @@
 									<div class="product-card__actions actions-product grid">
 										<div class="actions-product__top flex">
 											<div class="actions-product__wrapper">
-												<div class="actions-product__column actions-product__column_old-price">
+												<div class="actions-product__column actions-product__column_hidden actions-product__column_old-price">
 													<ul class="actions-product__list">
 														<li>
 															290 ₽
@@ -1659,12 +1685,13 @@
 											<picture><source data-srcset="img/product-card/product.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-card/product.png" alt="image:product"></picture>
 										</div>
 										<div class="content-product__inner grid">
-											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
+											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A
+												(черный)</div>
 											<div class="content-product__availability flex">
 												<div class="content-product__label">Наличие:</div>
 												<a href="#" target="_blank" class="content-product__link">Оренбург - в наличии</a>
 											</div>
-											<ul class="content-product__cities flex">
+											<ul class="content-product__cities content-product__cities_2x flex">
 												<li>
 													Оренбург
 												</li>
@@ -1683,320 +1710,7 @@
 									<div class="product-card__actions actions-product grid">
 										<div class="actions-product__top flex">
 											<div class="actions-product__wrapper">
-												<div class="actions-product__column actions-product__column_old-price">
-													<ul class="actions-product__list">
-														<li>
-															290 ₽
-														</li>
-														<li>
-															230 ₽
-														</li>
-													</ul>
-												</div>
-												<div class="actions-product__column actions-product__column_regular-price">
-													<ul class="actions-product__list">
-														<li>
-															264 ₽
-														</li>
-														<li>
-															203 ₽
-														</li>
-													</ul>
-												</div>
-												<div class="actions-product__column actions-product__column_labels">
-													<ul class="actions-product__list">
-														<li>
-															розничная
-														</li>
-														<li>
-															мелкооптовая
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div data-quantity class="quantity">
-												<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
-												<div class="quantity__input">
-													<input data-quantity-value autocomplete="off" type="text" name="form[]" value="11">
-												</div>
-												<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
-											</div>
-										</div>
-										<div class="actions-product__bottom flex">
-											<a href="#" class="actions-product__button actions-product__button_whatsapp button button_white">
-												<span class="element element_whatsapp" style="--icon: url(../img/icons/whatsapp.svg)"></span>
-												<span class="button__text">Быстрый заказ</span>
-											</a>
-											<a href="#" class="actions-product__button button button_green">
-												<span class="element element_shopping-card" style="--icon: url(../img/icons/shopping-card.svg)"></span>
-												Купить
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="product-card flex">
-									<div class="product-card__content content-product flex">
-										<div class="content-product__image">
-											<picture><source data-srcset="img/product-card/product.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-card/product.png" alt="image:product"></picture>
-										</div>
-										<div class="content-product__inner grid">
-											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
-											<div class="content-product__availability flex">
-												<div class="content-product__label">Наличие:</div>
-												<a href="#" target="_blank" class="content-product__link">Оренбург - в наличии</a>
-											</div>
-											<ul class="content-product__cities flex">
-												<li>
-													Оренбург
-												</li>
-												<li>
-													Сувер
-												</li>
-												<li>
-													Орск
-												</li>
-												<li>
-													Сочи
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="product-card__details details-product">
-										<ul class="details-product__list">
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">Скорость продаж:</span>
-												<span class="details-product__value">- 15.41</span>
-											</li>
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">Всего 26 хватит на мес.</span>
-												<span class="details-product__value">- 1.69</span>
-											</li>
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">gre -</span>
-												<span class="details-product__value">395|80|8 штук</span>
-											</li>
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">lib -</span>
-												<span class="details-product__value">395|80|8 штук</span>
-											</li>
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">lav -</span>
-												<span class="details-product__value">395|80|8 штук</span>
-											</li>
-										</ul>
-									</div>
-									<div class="product-card__actions actions-product grid">
-										<div class="actions-product__top flex">
-											<div class="actions-product__wrapper">
-												<div class="actions-product__column actions-product__column_different-colors">
-													<ul class="actions-product__list">
-														<li>
-															264 ₽
-														</li>
-														<li>
-															203 ₽
-														</li>
-														<li>
-															190 ₽
-														</li>
-													</ul>
-												</div>
-												<div class="actions-product__column actions-product__column_different-colors">
-													<ul class="actions-product__list">
-														<li>
-															розничная
-														</li>
-														<li>
-															мелкооптовая
-														</li>
-														<li>
-															оптовая
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div data-quantity class="quantity">
-												<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
-												<div class="quantity__input">
-													<input data-quantity-value autocomplete="off" type="text" name="form[]" value="11">
-												</div>
-												<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
-											</div>
-										</div>
-										<div class="actions-product__bottom flex">
-											<a href="#" class="actions-product__button button actions-product__button_whatsapp button_white">
-												<span class="element element_whatsapp" style="--icon: url(../img/icons/whatsapp.svg)"></span>
-												<span class="button__text">Быстрый заказ</span>
-											</a>
-											<a href="#" class="actions-product__button button button_green">
-												<span class="element element_shopping-card" style="--icon: url(../img/icons/shopping-card.svg)"></span>
-												Купить
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="product-card flex">
-									<div class="product-card__content content-product flex">
-										<div class="content-product__image">
-											<picture><source data-srcset="img/product-card/product.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-card/product.png" alt="image:product"></picture>
-										</div>
-										<div class="content-product__inner grid">
-											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
-											<div class="content-product__availability flex">
-												<div class="content-product__label">Наличие:</div>
-												<a href="#" target="_blank" class="content-product__link">Оренбург - в наличии</a>
-											</div>
-											<ul class="content-product__cities flex">
-												<li>
-													Оренбург
-												</li>
-												<li>
-													Сувер
-												</li>
-												<li>
-													Орск
-												</li>
-												<li>
-													Сочи
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="product-card__details details-product">
-										<ul class="details-product__list">
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">Скорость продаж:</span>
-												<span class="details-product__value">- 15.41</span>
-											</li>
-											<li class="details-product__item details-product__item_red">
-												<span class="details-product__label">Всего 26 хватит на мес.</span>
-												<span class="details-product__value">- 1.69</span>
-											</li>
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">gre -</span>
-												<span class="details-product__value">395|80|8 штук</span>
-											</li>
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">lib -</span>
-												<span class="details-product__value">395|80|8 штук</span>
-											</li>
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">lav -</span>
-												<span class="details-product__value">395|80|8 штук</span>
-											</li>
-										</ul>
-									</div>
-									<div class="product-card__actions actions-product grid">
-										<div class="actions-product__top flex">
-											<div class="actions-product__wrapper">
-												<div class="actions-product__column actions-product__column_different-colors">
-													<ul class="actions-product__list">
-														<li>
-															264 ₽
-														</li>
-														<li>
-															203 ₽
-														</li>
-														<li>
-															190 ₽
-														</li>
-														<li>
-															185 ₽
-														</li>
-													</ul>
-												</div>
-												<div class="actions-product__column actions-product__column_different-colors">
-													<ul class="actions-product__list">
-														<li>
-															розничная
-														</li>
-														<li>
-															мелкооптовая
-														</li>
-														<li>
-															оптовая
-														</li>
-														<li>
-															скидка 3%
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div data-quantity class="quantity">
-												<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
-												<div class="quantity__input">
-													<input data-quantity-value autocomplete="off" type="text" name="form[]" value="11">
-												</div>
-												<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
-											</div>
-										</div>
-										<div class="actions-product__bottom flex">
-											<a href="#" class="actions-product__button actions-product__button_whatsapp button button_white">
-												<span class="element element_whatsapp" style="--icon: url(../img/icons/whatsapp.svg)"></span>
-												<span class="button__text">Быстрый заказ</span>
-											</a>
-											<a href="#" class="actions-product__button button button_green">
-												<span class="element element_shopping-card" style="--icon: url(../img/icons/shopping-card.svg)"></span>
-												Купить
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="product-card flex">
-									<div class="product-card__content content-product flex">
-										<div class="content-product__image">
-											<picture><source data-srcset="img/product-card/product.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product-card/product.png" alt="image:product"></picture>
-										</div>
-										<div class="content-product__inner grid">
-											<div class="content-product__title">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)</div>
-											<div class="content-product__availability flex">
-												<div class="content-product__label">Наличие:</div>
-												<a href="#" target="_blank" class="content-product__link">Оренбург - в наличии</a>
-											</div>
-											<ul class="content-product__cities flex">
-												<li>
-													Оренбург
-												</li>
-												<li>
-													Сувер
-												</li>
-												<li>
-													Орск
-												</li>
-												<li>
-													Сочи
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="product-card__details details-product">
-										<ul class="details-product__list">
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">Скорость продаж:</span>
-												<span class="details-product__value">- 15.41</span>
-											</li>
-											<li class="details-product__item details-product__item_red">
-												<span class="details-product__label">Всего 26 хватит на мес.</span>
-												<span class="details-product__value">- 1.69</span>
-											</li>
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">gre -</span>
-												<span class="details-product__value">395|80|8 штук</span>
-											</li>
-											<li class="details-product__item details-product__item_green">
-												<span class="details-product__label">lib -</span>
-												<span class="details-product__value">395|80|8 штук</span>
-											</li>
-											<li class="details-product__item details-product__item_red">
-												<span class="details-product__label">lav -</span>
-												<span class="details-product__value">395|80|8 штук</span>
-											</li>
-										</ul>
-									</div>
-									<div class="product-card__actions actions-product grid">
-										<div class="actions-product__top flex">
-											<div class="actions-product__wrapper">
-												<div class="actions-product__column actions-product__column_old-price">
+												<div class="actions-product__column actions-product__column_hidden actions-product__column_old-price">
 													<ul class="actions-product__list">
 														<li>
 															290 ₽
@@ -2156,7 +1870,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240115144825"></script>
+	<script src="js/app.min.js?_v=20240116094258"></script>
 </body>
 
 </html>
