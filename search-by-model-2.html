@@ -5,7 +5,7 @@
 	<title>Search-by-model</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240116094258">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240117205448">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -18,10 +18,13 @@
 						<picture><source srcset="img/logo/logo.webp" type="image/webp"><img src="img/logo/logo.png" alt="icon: Electronics"></picture>
 					</a>
 					<div class="top-header__items">
-						<div data-popup="#popupRegion" class="top-header__cities cities-header _icon-location">
-							<div class="cities-header__info _icon-arrow">
-								<div data-text-popup class="cities-header__text">Москва</div>
+						<div class="top-header__some-wrapper">
+							<div data-popup="#popupRegion" class="top-header__cities cities-header _icon-location">
+								<div class="cities-header__info _icon-arrow">
+									<div data-text-popup class="cities-header__text">Москва</div>
+								</div>
 							</div>
+							<a href="mailto:+79586697775" class="top-header__callback">+7 (958) 669-77-75</a>
 						</div>
 						<div data-drop class="__drop drop">
 							<div data-drop-body-open class="drop__top top-drop">
@@ -36,15 +39,13 @@
 								<div class="item-main-header__header">
 									<div class="item-main-header__subtext">Магазин: </div>
 									<div data-drop-body-open class="item-main-header__info _icon-arrow">
-										<div data-drop-title data-drop-active-item class="item-main-header__text">г.Москва м.Нагатинская
-											Варшавское
-											ш. 26</div>
+										<div data-drop-title data-drop-active-item class="item-main-header__text">г.Оренбург ТРЦ Север</div>
 									</div>
 								</div>
 								<div data-drop-body class="item-main-header__body">
-									<div data-drop-item class="item-main-header__item">г.Москва м.Нагатинская Варшавское ш. 26 1</div>
-									<div data-drop-item class="item-main-header__item">г.Москва м.Нагатинская Варшавское ш. 26 2</div>
-									<div data-drop-item class="item-main-header__item">г.Москва м.Нагатинская Варшавское ш. 26 3</div>
+									<div data-drop-item class="item-main-header__item">г.Оренбург ТРЦ Север</div>
+									<div data-drop-item class="item-main-header__item">Орск</div>
+									<div data-drop-item class="item-main-header__item">Оренбург 23мкр</div>
 								</div>
 							</div>
 							<div class="main-header__dates">
@@ -59,19 +60,22 @@
 				<div class="header__bottom bottom-header">
 					<div class="bottom-header__container">
 						<form action="#" class="bottom-header__search">
-							<input placeholder="Поиск по модели" type="text" class="bottom-header__input">
-							<button class="bottom-header__btn _icon-search"></button>
+							<div class="bottom-header__test">
+								<input placeholder="Поиск по модели" type="text" class="bottom-header__input">
+								<button class="bottom-header__btn _icon-search"></button>
+							</div>
 						</form>
 						<div data-da=".menu__container,767.98,last" class="bottom-header__actions">
-							<a href="#" class="bottom-header__button bottom-header__button_desktop button button_green">Заказать звонок</a>
+							<!-- <a href="#" class="bottom-header__button bottom-header__button_desktop button button_green">Заказать звонок</a> -->
 							<a href="#" class="bottom-header__button bottom-header__button_mobile button whatsapp-btn button_green">
 								<span class="element element_whatsapp element_white-whatsapp" style="--icon: url(../img/icons/whatsapp.svg)"></span>
 								<span>Написать WhatsApp</span>
 							</a>
 							<a href="#" class="bottom-header__button button button_transparent _icon-user">Войти</a>
-							<button class="bottom-header__shopping-card-btn shopping-card-btn _icon-cart"></button>
+							<button class="bottom-header__shopping-card-btn shopping-card-btn _icon-cart">
+								<span>1</span>
+							</button>
 						</div>
-
 					</div>
 				</div>
 				<div class="header__menu menu">
@@ -737,9 +741,6 @@
 											<label for="c_3" class="checkbox__label"><span class="checkbox__text">Булат
 													Умерова<small>(265)</small></span></label>
 										</div>
-										<a href="#" class="item-filter-catalog__show-all">
-											Смотреть все
-										</a>
 									</div>
 								</div>
 								<div class="filter-catalog__item item-filter-catalog">
@@ -758,9 +759,6 @@
 											<input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
 											<label for="c_6" class="checkbox__label"><span class="checkbox__text">LEIWEI<small>(2)</small></span></label>
 										</div>
-										<a href="#" class="item-filter-catalog__show-all">
-											Смотреть все
-										</a>
 									</div>
 								</div>
 								<div class="filter-catalog__item item-filter-catalog">
@@ -781,9 +779,6 @@
 											<label for="c_9" class="checkbox__label"><span class="checkbox__text">Задняя
 													крышка<small>(2)</small></span></label>
 										</div>
-										<a href="#" class="item-filter-catalog__show-all">
-											Смотреть все
-										</a>
 									</div>
 								</div>
 								<div class="filter-catalog__item item-filter-catalog">
@@ -802,9 +797,6 @@
 											<input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
 											<label for="c_12" class="checkbox__label"><span class="checkbox__text">желтый<small>(1)</small></span></label>
 										</div>
-										<a href="#" class="item-filter-catalog__show-all">
-											Смотреть все
-										</a>
 									</div>
 								</div>
 								<div class="filter-catalog__item item-filter-catalog">
@@ -819,9 +811,6 @@
 											<input id="c_14" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
 											<label for="c_14" class="checkbox__label"><span class="checkbox__text">Type-C<small>(2)</small></span></label>
 										</div>
-										<a href="#" class="item-filter-catalog__show-all">
-											Смотреть все
-										</a>
 									</div>
 								</div>
 								<div class="filter-catalog__item item-filter-catalog">
@@ -843,9 +832,6 @@
 											<label for="c_17" class="checkbox__label"><span class="checkbox__text">Apple iPhone
 													5S<small>(2)</small></span></label>
 										</div>
-										<a href="#" class="item-filter-catalog__show-all">
-											Смотреть все
-										</a>
 									</div>
 								</div>
 							</div>
@@ -955,25 +941,12 @@
 												</li>
 											</ul>
 										</div>
-										<div class="sidebar-arrivals__item">
-											<div class="sidebar-arrivals__header">Доска заказов</div>
-											<ul class="sidebar-arrivals__list">
-												<li>
-													<picture><source srcset="img/sidebar-arrivals/product.webp" type="image/webp"><img src="img/sidebar-arrivals/product.jpg" alt="image"></picture>
-													<a href="#">Снижение цен на стекла OG и HOCO</a>
-												</li>
-												<li>
-													<picture><source srcset="img/sidebar-arrivals/product.webp" type="image/webp"><img src="img/sidebar-arrivals/product.jpg" alt="image"></picture>
-													<a href="#">OG стекла, много новых моделей</a>
-												</li>
-											</ul>
-										</div>
 									</div>
 									<div class="banner banner_mobile-visible">
 										<div class="banner__item">
 											<div class="banner__image">
 												<picture><source srcset="img/banner/Image.webp" type="image/webp"><img src="img/banner/Image.jpg" alt="image"></picture>
-												<span class="banner__header">Новинка</span>
+												<a href="#" class="banner__header">Новинка</a>
 											</div>
 											<div class="banner__label">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)
 											</div>
@@ -981,7 +954,7 @@
 										<div class="banner__item">
 											<div class="banner__image">
 												<picture><source srcset="img/banner/Image.webp" type="image/webp"><img src="img/banner/Image.jpg" alt="image"></picture>
-												<span class="banner__header">Новинка</span>
+												<a href="#" class="banner__header">Новинка</a>
 											</div>
 											<div class="banner__label">Кабель USB - MicroUSB Borofone BX20 Enjoy, 1м, 2.4A (черный)
 											</div>
@@ -1654,7 +1627,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240116094258"></script>
+	<script src="js/app.min.js?_v=20240117205448"></script>
 </body>
 
 </html>
