@@ -1509,6 +1509,7 @@ body::after {
 }
 
 .banner__item {
+  display: block;
   overflow: hidden;
   position: relative;
   background: var(--mainWhite);
@@ -2491,6 +2492,10 @@ body::after {
   display: none;
 }
 
+.mobile-show_search-by-model {
+  display: block !important;
+}
+
 .mobile-subtitle {
   display: none;
 }
@@ -2533,6 +2538,10 @@ body::after {
 
 .result-block__label:not(:last-child) {
   margin-bottom: 1.25rem;
+}
+
+.availiability-active {
+  color: var(--mainGreen) !important;
 }
 
 .header {
