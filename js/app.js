@@ -7205,13 +7205,45 @@
                 e.preventDefault();
             }
         }));
+        document.addEventListener("DOMContentLoaded", (function() {
+            const togglePasswordButton = document.getElementById("togglePassword");
+            const passwordInput = document.getElementById("passwordInput");
+            const passwordIcon = document.getElementById("passwordIcon");
+            if (togglePasswordButton && passwordInput && passwordIcon) {
+                if (passwordInput.type === "password") passwordIcon.src = "../../img/icons/eye-password-hide.svg";
+                togglePasswordButton.addEventListener("click", (function(e) {
+                    e.preventDefault();
+                    if (passwordInput.type === "password") {
+                        passwordInput.type = "text";
+                        passwordIcon.src = "../../img/icons/eye-view.svg";
+                    } else {
+                        passwordInput.type = "password";
+                        passwordIcon.src = "../../img/icons/eye-password-hide.svg";
+                    }
+                }));
+            }
+        }));
+        document.addEventListener("DOMContentLoaded", (function() {
+            const inputs = document.querySelectorAll(".form-modal__line input");
+            inputs.forEach((function(input) {
+                const parentBlock = input.closest(".form-modal__line");
+                if (input && parentBlock) {
+                    input.addEventListener("focus", (function() {
+                        parentBlock.classList.add("focused");
+                    }));
+                    input.addEventListener("blur", (function() {
+                        parentBlock.classList.remove("focused");
+                    }));
+                }
+            }));
+        }));
         window["FLS"] = false;
         isWebp();
         menuInit();
         spollers();
         showMore();
         formQuantity();
-        window.addEventListener("load", (() => {
+        window.addEventListener("DOMContentLoaded", (() => {
             headerScroll();
         }));
         dropList();
