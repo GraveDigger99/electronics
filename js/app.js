@@ -7237,6 +7237,29 @@
                 }
             }));
         }));
+        const parentBlock = document.querySelector(".sidebar-arrivals__list");
+        if (parentBlock) {
+            const links = parentBlock.querySelectorAll("a");
+            if (links.length > 0) links.forEach((link => {
+                link.addEventListener("click", (function() {
+                    link.classList.add("visited");
+                    localStorage.setItem(link.href, "visited");
+                }));
+                if (localStorage.getItem(link.href) === "visited") link.classList.add("visited");
+            })); else console.warn("Нет ссылок внутри блока .sidebar-arrivals__list");
+        } else console.warn("Блок .sidebar-arrivals__list не найден на странице");
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (scrollToTopBtn) {
+            window.onscroll = function() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) scrollToTopBtn.classList.add("visible"); else scrollToTopBtn.classList.remove("visible");
+            };
+            scrollToTopBtn.onclick = function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            };
+        }
         window["FLS"] = false;
         isWebp();
         menuInit();
