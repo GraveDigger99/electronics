@@ -1206,7 +1206,8 @@ body::after {
 
 .modal-error-message {
   border-radius: 5px;
-  margin: 20px 0;
+  margin-top: 25px;
+  margin-bottom: 20px;
   border: 2px solid var(--mainRed);
   background-color: var(--mainRed);
   color: var(--mainWhite);
@@ -6340,6 +6341,10 @@ body::after {
 }
 
 @media (max-width: 29.99875em) {
+  .modal-error-message {
+    font-size: 14px;
+  }
+
   .button__text {
     display: none;
   }

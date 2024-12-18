@@ -7215,10 +7215,10 @@
                     e.preventDefault();
                     if (passwordInput.type === "password") {
                         passwordInput.type = "text";
-                        passwordIcon.src = "../../img/icons/eye-view.svg";
+                        passwordIcon.src = "img/icons/eye-view.svg";
                     } else {
                         passwordInput.type = "password";
-                        passwordIcon.src = "../../img/icons/eye-password-hide.svg";
+                        passwordIcon.src = "img/icons/eye-password-hide.svg";
                     }
                 }));
             }
