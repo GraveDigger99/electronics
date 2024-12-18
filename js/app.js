@@ -7237,17 +7237,6 @@
                 }
             }));
         }));
-        const parentBlock = document.querySelector(".sidebar-arrivals__list");
-        if (parentBlock) {
-            const links = parentBlock.querySelectorAll("a");
-            if (links.length > 0) links.forEach((link => {
-                link.addEventListener("click", (function() {
-                    link.classList.add("visited");
-                    localStorage.setItem(link.href, "visited");
-                }));
-                if (localStorage.getItem(link.href) === "visited") link.classList.add("visited");
-            })); else console.warn("Нет ссылок внутри блока .sidebar-arrivals__list");
-        } else console.warn("Блок .sidebar-arrivals__list не найден на странице");
         const scrollToTopBtn = document.getElementById("scrollToTopBtn");
         if (scrollToTopBtn) {
             window.onscroll = function() {
@@ -7260,6 +7249,26 @@
                 });
             };
         }
+        window.addEventListener("load", (() => {}));
+        document.addEventListener("DOMContentLoaded", (function() {
+            const links = document.querySelectorAll(".sidebar-arrivals__list a");
+            let visitedLinks = JSON.parse(localStorage.getItem("visitedLinks")) || [];
+            function getLinkId(link) {
+                return link.href + (link.id ? `#${link.id}` : "");
+            }
+            links.forEach((link => {
+                const linkId = getLinkId(link);
+                if (visitedLinks.includes(linkId)) link.classList.add("visited");
+                link.addEventListener("click", (function() {
+                    const linkId = getLinkId(link);
+                    if (!visitedLinks.includes(linkId)) {
+                        visitedLinks.push(linkId);
+                        localStorage.setItem("visitedLinks", JSON.stringify(visitedLinks));
+                    }
+                    link.classList.add("visited");
+                }));
+            }));
+        }));
         window["FLS"] = false;
         isWebp();
         menuInit();
