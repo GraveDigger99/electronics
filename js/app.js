@@ -7211,7 +7211,9 @@
         spollers();
         showMore();
         formQuantity();
-        headerScroll();
+        window.addEventListener("load", (() => {
+            headerScroll();
+        }));
         dropList();
     })();
 })();
