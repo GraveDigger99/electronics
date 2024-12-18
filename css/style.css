@@ -2702,10 +2702,12 @@ body::after {
 .article-product__label {
   color: var(--grey20);
   line-height: var(--lineHeight160);
+  font-size: 0.75rem;
 }
 
 .article-product__value {
   color: #333;
+  font-size: 0.75rem !important;
   letter-spacing: 0.048px;
   line-height: var(--lineHeight130);
   font-size: 0.875rem;
@@ -4087,10 +4089,6 @@ body::after {
   max-width: 100%;
 }
 
-.content-product__inner {
-  gap: 0.625rem;
-}
-
 .content-product__title {
   color: var(--grey20);
   font-weight: 700;
@@ -4106,6 +4104,10 @@ body::after {
   gap: 0.625rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.content-product__availability:not(:last-child) {
+  margin-bottom: 0.3125rem;
 }
 
 .content-product__label {
