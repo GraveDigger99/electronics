@@ -7210,7 +7210,7 @@
             const passwordInput = document.getElementById("passwordInput");
             const passwordIcon = document.getElementById("passwordIcon");
             if (togglePasswordButton && passwordInput && passwordIcon) {
-                if (passwordInput.type === "password") passwordIcon.src = "../../img/icons/eye-password-hide.svg";
+                if (passwordInput.type === "password") passwordIcon.src = "img/icons/eye-password-hide.svg";
                 togglePasswordButton.addEventListener("click", (function(e) {
                     e.preventDefault();
                     if (passwordInput.type === "password") {
