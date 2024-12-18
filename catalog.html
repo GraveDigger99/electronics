@@ -5,7 +5,7 @@
 	<title>Catalog</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241105102243">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241218050915">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -39,7 +39,8 @@
 								<div class="item-main-header__header">
 									<div class="item-main-header__subtext">Магазин: </div>
 									<div data-drop-body-open class="item-main-header__info _icon-arrow">
-										<div data-drop-title data-drop-active-item class="item-main-header__text">г.Оренбург ТРЦ Север</div>
+										<div data-drop-title data-drop-active-item class="item-main-header__text">г.Оренбург ТРЦ Север
+										</div>
 									</div>
 								</div>
 								<div data-drop-body class="item-main-header__body">
@@ -68,10 +69,10 @@
 						<div data-da=".menu__container,767.98,last" class="bottom-header__actions">
 							<!-- <a href="#" class="bottom-header__button bottom-header__button_desktop button button_green">Заказать звонок</a> -->
 							<a href="#" class="bottom-header__button bottom-header__button_mobile button whatsapp-btn button_green">
-								<span class="element element_whatsapp element_white-whatsapp" style="--icon: url(img/icons/whatsapp.svg)"></span>
+								<span class="element element_whatsapp element_white-whatsapp" style="--icon: url(../img/icons/whatsapp.svg)"></span>
 								<span>Написать WhatsApp</span>
 							</a>
-							<a href="#" class="bottom-header__button button button_transparent _icon-user">Войти</a>
+							<button data-popup="#popupLogin" class="bottom-header__button button button_transparent _icon-user">Войти</button>
 							<button class="bottom-header__shopping-card-btn shopping-card-btn _icon-cart">
 								<span>1</span>
 							</button>
@@ -116,7 +117,7 @@
 									</li>
 								</ul>
 								<a href="#" class="button button_green button_white-icon">
-									<span class="element" style="--icon: url(img/icons/whatsapp.svg)"></span>
+									<span class="element" style="--icon: url(../img/icons/whatsapp.svg)"></span>
 									Написать WhatsApp
 								</a>
 							</div>
@@ -258,16 +259,81 @@
 		</footer>
 
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popupLogin" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_s">
+				<button data-close type="button" class="popup__close popup__close_abs">
+					<img src="img/icons/close.svg" alt="icon: close">
+				</button>
+				<div class="login-modal">
+					<div class="modal-error-message">
+						Не указан номер телефона, логин или email
+					</div>
+					<h3 class="popup__title">Авторизация</h3>
+					<form class="login-modal__form form-modal">
+						<div class="form-modal__inputs">
+							<div class="form-modal__line">
+								<input type="text" placeholder="Номер телефона, логин или email">
+							</div>
+							<div class="form-modal__line">
+								<input id="passwordInput" type="password" placeholder="Пароль">
+								<button id="togglePassword" class="form-modal__cta">
+									<img id="passwordIcon" src="img/icons/eye-view.svg" alt="icon">
+								</button>
+							</div>
+						</div>
+						<div class="checkbox">
+							<input id="c_111" data-error="Ошибка" class="checkbox__input" type="checkbox" value="111" name="form[]">
+							<label for="c_111" class="checkbox__label"><span class="checkbox__text checkbox__text_s">Запомнить
+									меня</span></label>
+						</div>
+						<button class="form-modal__button">
+							<span>Получить пароль в WhatsApp</span>
+						</button>
+						<button class="form-modal__button"><span>
+								Восстановить доступ по email
+							</span></button>
+						<button class="form-modal__submit-button" type="submit">Войти</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
+
+
+	<div id="popupNotification" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_s">
+				<div class="login-modal">
+					<div class="modal-error-message">
+						Не указан номер телефона, логин или email
+					</div>
+					<div class="login-modal__header">
+						<h3 class="popup__title">Уведомление о поступлении товара</h3>
+						<button data-close type="button" class="popup__close popup__close_abs">
+							<img src="img/icons/close.svg" alt="icon: close">
+						</button>
+					</div>
+					<form class="login-modal__form form-modal">
+						<div class="form-modal__inputs">
+							<div class="form-modal__line">
+								<input type="text" placeholder="Ваш E-mail">
+							</div>
+							<div class="form-modal__line">
+								<input type="text" placeholder="Отправить заявку">
+							</div>
+						</div>
+						<button class="form-modal__submit-button" type="submit">Отправить заявку</button>
+					</form>
+					<div class="login-modal__bottom">
+						<p>
+							Укажите ваш электронный адрес и при поступлении товара мы отправим вам E-mail уведомление.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<div id="popupRegion" aria-hidden="true" class="popup">
@@ -323,7 +389,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20241105102243"></script>
+	<script src="js/app.min.js?_v=20241218050915"></script>
 </body>
 
 </html>
